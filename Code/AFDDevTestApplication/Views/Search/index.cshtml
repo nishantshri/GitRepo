@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+thead {color:green;}
+tbody {color:blue;}
+tfoot {color:red;}
+
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+
+<script>
+    $(document).ready(function () {
+        $(function () {
+            $("#txtCustomerName").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: 'Search/SearchCustomer/',
+                        data: {
+                            "name": $("#txtCustomerName").val()
+                        },
+                        //dataType: "json",
+                        type: "GET",
+                        success: function (data) {
+                            if (data.Status) {
+                                response($.map(data.Data, function (item) {
+                                    return { label: item.CustomerName, value: item.Value };
+                                }))
+                            }
+                           
+                        },
+                        error: function (response) {
+                            alert(response.responseText);
+                        },
+                        failure: function (response) {
+                            alert(response.responseText);
+                        }
+                    });
+                },
+                select: function (e, i) {
+
+                    $.ajax({
+                        url: 'Search/GetCustomer/',
+                        data: {
+                            "value": i.item.value
+                        },
+                        //dataType: "json",
+                        type: "GET",
+                        success: function (data) {
+                            $("#txtCustomerName").val(data.CustomerName);
+                            $("#console").empty();
+                            var strHtml = "<table><tr><th>Property</th><th>Customer Name</th><th>Value</th><th>Action</th><th>File</th><th>Status</th><th>Hash</th></tr>";
+                            strHtml = strHtml + "<tr><td>" + data.Property + "</td>" + "<td>" + data.CustomerName + "</td>" + "<td>" + data.Value + "</td>" + "<td>" + data.Action + "</td>";
+                            strHtml = strHtml + "<td>" + data.File + "</td>" + "<td>" + data.Status + "</td>" + "<td>" + data.Hash + "</td>";
+                            var str = data.Property + '|' + data.CustomerName + '|' + data.Value + '|' + data.Action + '|' + data.File;
+                            str = str + '|' + data.Status + '|' + data.Hash;
+                            $("#console").append(strHtml);
+                        } //success
+                    }) //ajax
+                },
+                minLength: 3
+            });
+        });
+        $("#btnHash").click(function () {
+            if ($("#txtHash").val().length > 0) {
+                var hashTxt = $("#txtHash").val();
+                var hashData = {
+                    "hash": hashTxt
+                };
+                $.getJSON("/Search/CheckHash", hashData, function (data) {
+
+                    $("#console").empty();
+                    if (data.Flag) {
+                        var strHtml = "<table><tr><th>Property</th><th>Customer Name</th><th>Value</th><th>Action</th><th>File</th><th>Status</th><th>Hash</th></tr>";
+                        strHtml = strHtml + "<tr><td>" + data.Message.Property + "</td>" + "<td>" + data.Message.CustomerName + "</td>" + "<td>" + data.Message.Value + "</td>" + "<td>" + data.Message.Action + "</td>";
+                        strHtml = strHtml + "<td>" + data.Message.File + "</td>" + "<td>" + data.Message.Status + "</td>" + "<td>" + data.Message.Hash + "</td>";
+                        $("#console").append(strHtml);
+                    }
+                    else
+                        alert(data.Error);
+                })
+                 .fail(function (jqXHR, textStatus, errorThrown) { alert('getJSON request failed! ' + textStatus); })
+            }
+            else
+                alert('Hash value is empty');
+
+        });
+
+    })
+</script>
+<div id="searchContainer">
+<label>Search by Cutomer Name:</label>
+<input type="text" id="txtCustomerName" />
+</div>
+
+<div id="searchAPIContainer">
+<label>Search by HASH (Send to API)</label>
+<input type="text" id="txtHash" />
+<input type="button" id="btnHash" name="Search" value="Search"/>
+</div>
+
+<div id="console">
+
+</div>

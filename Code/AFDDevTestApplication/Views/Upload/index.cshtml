@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{ using (Html.BeginForm("Index", "Upload", FormMethod.Post, new { enctype = "multipart/form-data" }))
+ {
+     if (!Convert.ToBoolean(ViewData["IsDataPresent"]))
+    {
+         <input type="file" name="FileUpload"  />
+    
+    <input type="submit" name="Submit" id="Submit" value="Upload" )/>    
+  
+    }
+
+ }
+}
+
+<p>@Html.Raw(ViewBag.HtmlStr)</p>
+@{
+    if (Convert.ToBoolean(ViewData["IsDataPresent"]))
+    {
+        <button type="button" onclick="location.href='@Url.Action("Delete", "Upload")'" >Delete</button>      
+    
+    }
+    }
+
+<p>@ViewData["msg"]</p>
+<p>@Html.Raw(ViewBag.Feedback)</p>
