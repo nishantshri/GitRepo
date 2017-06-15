@@ -5,7 +5,8 @@
 
 @{ using (Html.BeginForm("Index", "Upload", FormMethod.Post, new { enctype = "multipart/form-data" }))
  {
-     if (!Convert.ToBoolean(ViewData["IsDataPresent"]))
+    @Html.AntiForgeryToken() 
+    if (!Convert.ToBoolean(ViewData["IsDataPresent"]))
     {
          <input type="file" name="FileUpload"  />
     
