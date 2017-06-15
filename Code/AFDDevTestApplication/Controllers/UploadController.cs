@@ -40,6 +40,7 @@ namespace AFDDevTestApplication.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken()]
         public ActionResult Index(HttpPostedFileBase fileUpload)
         {
             string Message = String.Empty;
