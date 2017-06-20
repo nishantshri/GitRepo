@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0da79e21-7f64-4518-9cf5-8a14921a8cd0" name="HP@HP-PC 2017-06-19 23:06:26" runUser="HP-PC\HP" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="b05a3c0c-8e63-4e7b-b900-4d84dc28b507">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="HP_HP-PC 2017-06-19 23_06_26">
+      <DeploymentItem filename="C:\Users\HP\Documents\Visual Studio 2010\Projects\NumericSequenceWorldNomads\packages\Selenium.WebDriver.3.4.0\lib\net40\WebDriver.dll" />
+      <DeploymentItem filename="C:\Program Files\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\Users\HP\Documents\Visual Studio 2010\Projects\NumericSequenceWorldNomads\NumericSequenceWorldNomads\bin\NumericSequenceWorldNomads.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2017-06-19T23:06:26.8118454+10:00" queuing="2017-06-19T23:06:29.5138454+10:00" start="2017-06-19T23:06:29.7408454+10:00" finish="2017-06-19T23:07:57.9118454+10:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="EndtoEndTest" storage="c:\users\hp\documents\visual studio 2010\projects\numericsequenceworldnomads\numericsequenceworldnomadstest\bin\release\numericsequenceworldnomadstest.dll" id="6f0ad37f-5bcb-2d5a-01b1-4c243bfb319c">
+      <Execution id="a13fe79d-c25c-422a-86fb-6ee67a74f325" />
+      <TestMethod codeBase="C:/Users/HP/Documents/Visual Studio 2010/Projects/NumericSequenceWorldNomads/NumericSequenceWorldNomadsTest/bin/Release/NumericSequenceWorldNomadsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NumericSequenceWorldNomadsTest.UITests.UITests, NumericSequenceWorldNomadsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EndtoEndTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="6f0ad37f-5bcb-2d5a-01b1-4c243bfb319c" executionId="a13fe79d-c25c-422a-86fb-6ee67a74f325" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a13fe79d-c25c-422a-86fb-6ee67a74f325" testId="6f0ad37f-5bcb-2d5a-01b1-4c243bfb319c" testName="EndtoEndTest" computerName="HP-PC" duration="00:01:24.9155654" startTime="2017-06-19T23:06:29.9988454+10:00" endTime="2017-06-19T23:07:56.4748454+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a13fe79d-c25c-422a-86fb-6ee67a74f325">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ccac829a-187c-4a39-90c9-32a7d6326763" name="HP@HP-PC 2017-06-20 23:22:42" runUser="HP-PC\HP" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="b05a3c0c-8e63-4e7b-b900-4d84dc28b507">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="HP_HP-PC 2017-06-20 23_22_42">
+      <DeploymentItem filename="C:\Users\HP\Documents\Visual Studio 2010\Projects\NumericSequenceWorldNomads\packages\Selenium.WebDriver.3.4.0\lib\net40\WebDriver.dll" />
+      <DeploymentItem filename="C:\Program Files\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Web.Mvc.dll" />
+      <DeploymentItem filename="C:\Users\HP\Documents\Visual Studio 2010\Projects\NumericSequenceWorldNomads\NumericSequenceWorldNomads\bin\NumericSequenceWorldNomads.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2017-06-20T23:22:42.7165275+10:00" queuing="2017-06-20T23:22:47.8225275+10:00" start="2017-06-20T23:22:48.0245275+10:00" finish="2017-06-20T23:23:15.1735275+10:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="7" executed="7" passed="7" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="IndexPostTestAllNumbers" storage="c:\users\hp\documents\visual studio 2010\projects\numericsequenceworldnomads\numericsequenceworldnomadstest\bin\release\numericsequenceworldnomadstest.dll" id="81e5eb03-a484-249a-c5d2-a05630d9be90">
+      <Execution id="cd88e1ba-1b2a-423c-aee9-538029a29e39" />
+      <TestMethod codeBase="C:/Users/HP/Documents/Visual Studio 2010/Projects/NumericSequenceWorldNomads/NumericSequenceWorldNomadsTest/bin/Release/NumericSequenceWorldNomadsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NumericSequenceWorldNomadsTest.ControllerTests.HomeControllerTest, NumericSequenceWorldNomadsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IndexPostTestAllNumbers" />
+    </UnitTest>
+    <UnitTest name="IndexPostTestFibonacciNumbers" storage="c:\users\hp\documents\visual studio 2010\projects\numericsequenceworldnomads\numericsequenceworldnomadstest\bin\release\numericsequenceworldnomadstest.dll" id="185e56a6-ee84-6994-34de-0767314f7a1b">
+      <Execution id="615fc913-1c94-4d52-82e2-de50d37ad9cf" />
+      <TestMethod codeBase="C:/Users/HP/Documents/Visual Studio 2010/Projects/NumericSequenceWorldNomads/NumericSequenceWorldNomadsTest/bin/Release/NumericSequenceWorldNomadsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NumericSequenceWorldNomadsTest.ControllerTests.HomeControllerTest, NumericSequenceWorldNomadsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IndexPostTestFibonacciNumbers" />
+    </UnitTest>
+    <UnitTest name="IndexPostTestEvenNumbers" storage="c:\users\hp\documents\visual studio 2010\projects\numericsequenceworldnomads\numericsequenceworldnomadstest\bin\release\numericsequenceworldnomadstest.dll" id="18a58001-e85d-6155-54d7-c8aec4c1d653">
+      <Execution id="f777338e-8f46-4f48-92e8-9f1ce87e0e56" />
+      <TestMethod codeBase="C:/Users/HP/Documents/Visual Studio 2010/Projects/NumericSequenceWorldNomads/NumericSequenceWorldNomadsTest/bin/Release/NumericSequenceWorldNomadsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NumericSequenceWorldNomadsTest.ControllerTests.HomeControllerTest, NumericSequenceWorldNomadsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IndexPostTestEvenNumbers" />
+    </UnitTest>
+    <UnitTest name="IndexPostTestSubstitutedNumbers" storage="c:\users\hp\documents\visual studio 2010\projects\numericsequenceworldnomads\numericsequenceworldnomadstest\bin\release\numericsequenceworldnomadstest.dll" id="234c1a0f-0f17-7a11-0d6a-7d98bb6259c6">
+      <Execution id="0bde13ce-5ba3-4a95-8646-860383794321" />
+      <TestMethod codeBase="C:/Users/HP/Documents/Visual Studio 2010/Projects/NumericSequenceWorldNomads/NumericSequenceWorldNomadsTest/bin/Release/NumericSequenceWorldNomadsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NumericSequenceWorldNomadsTest.ControllerTests.HomeControllerTest, NumericSequenceWorldNomadsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IndexPostTestSubstitutedNumbers" />
+    </UnitTest>
+    <UnitTest name="IndexPostTestOddNumbers" storage="c:\users\hp\documents\visual studio 2010\projects\numericsequenceworldnomads\numericsequenceworldnomadstest\bin\release\numericsequenceworldnomadstest.dll" id="98b6814a-a7fa-a632-6108-19e37508eed8">
+      <Execution id="1f7c55b5-59fb-4299-9080-0aa3f04ab422" />
+      <TestMethod codeBase="C:/Users/HP/Documents/Visual Studio 2010/Projects/NumericSequenceWorldNomads/NumericSequenceWorldNomadsTest/bin/Release/NumericSequenceWorldNomadsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NumericSequenceWorldNomadsTest.ControllerTests.HomeControllerTest, NumericSequenceWorldNomadsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IndexPostTestOddNumbers" />
+    </UnitTest>
+    <UnitTest name="EndtoEndTest" storage="c:\users\hp\documents\visual studio 2010\projects\numericsequenceworldnomads\numericsequenceworldnomadstest\bin\release\numericsequenceworldnomadstest.dll" id="6f0ad37f-5bcb-2d5a-01b1-4c243bfb319c">
+      <Execution id="d0d59ecb-b3ed-406f-acd3-713c03f8e5eb" />
+      <TestMethod codeBase="C:/Users/HP/Documents/Visual Studio 2010/Projects/NumericSequenceWorldNomads/NumericSequenceWorldNomadsTest/bin/Release/NumericSequenceWorldNomadsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NumericSequenceWorldNomadsTest.UITests.UITests, NumericSequenceWorldNomadsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EndtoEndTest" />
+    </UnitTest>
+    <UnitTest name="IndexPostTestNegativeNumnber" storage="c:\users\hp\documents\visual studio 2010\projects\numericsequenceworldnomads\numericsequenceworldnomadstest\bin\release\numericsequenceworldnomadstest.dll" id="dafd4075-e542-20e1-3b63-5e0b2a8ecf9e">
+      <Execution id="5e28fe04-3993-4d83-bcf3-23ae8a3b7c64" />
+      <TestMethod codeBase="C:/Users/HP/Documents/Visual Studio 2010/Projects/NumericSequenceWorldNomads/NumericSequenceWorldNomadsTest/bin/Release/NumericSequenceWorldNomadsTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="NumericSequenceWorldNomadsTest.ControllerTests.HomeControllerTest, NumericSequenceWorldNomadsTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IndexPostTestNegativeNumnber" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="185e56a6-ee84-6994-34de-0767314f7a1b" executionId="615fc913-1c94-4d52-82e2-de50d37ad9cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18a58001-e85d-6155-54d7-c8aec4c1d653" executionId="f777338e-8f46-4f48-92e8-9f1ce87e0e56" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="234c1a0f-0f17-7a11-0d6a-7d98bb6259c6" executionId="0bde13ce-5ba3-4a95-8646-860383794321" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f0ad37f-5bcb-2d5a-01b1-4c243bfb319c" executionId="d0d59ecb-b3ed-406f-acd3-713c03f8e5eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="81e5eb03-a484-249a-c5d2-a05630d9be90" executionId="cd88e1ba-1b2a-423c-aee9-538029a29e39" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="98b6814a-a7fa-a632-6108-19e37508eed8" executionId="1f7c55b5-59fb-4299-9080-0aa3f04ab422" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dafd4075-e542-20e1-3b63-5e0b2a8ecf9e" executionId="5e28fe04-3993-4d83-bcf3-23ae8a3b7c64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="615fc913-1c94-4d52-82e2-de50d37ad9cf" testId="185e56a6-ee84-6994-34de-0767314f7a1b" testName="IndexPostTestFibonacciNumbers" computerName="HP-PC" duration="00:00:00.1902340" startTime="2017-06-20T23:22:48.0325275+10:00" endTime="2017-06-20T23:22:48.6765275+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="615fc913-1c94-4d52-82e2-de50d37ad9cf">
+    </UnitTestResult>
+    <UnitTestResult executionId="f777338e-8f46-4f48-92e8-9f1ce87e0e56" testId="18a58001-e85d-6155-54d7-c8aec4c1d653" testName="IndexPostTestEvenNumbers" computerName="HP-PC" duration="00:00:00.0010939" startTime="2017-06-20T23:22:48.6835275+10:00" endTime="2017-06-20T23:22:48.6905275+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f777338e-8f46-4f48-92e8-9f1ce87e0e56">
+    </UnitTestResult>
+    <UnitTestResult executionId="0bde13ce-5ba3-4a95-8646-860383794321" testId="234c1a0f-0f17-7a11-0d6a-7d98bb6259c6" testName="IndexPostTestSubstitutedNumbers" computerName="HP-PC" duration="00:00:00.0012479" startTime="2017-06-20T23:22:48.6935275+10:00" endTime="2017-06-20T23:22:48.6995275+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0bde13ce-5ba3-4a95-8646-860383794321">
+    </UnitTestResult>
+    <UnitTestResult executionId="d0d59ecb-b3ed-406f-acd3-713c03f8e5eb" testId="6f0ad37f-5bcb-2d5a-01b1-4c243bfb319c" testName="EndtoEndTest" computerName="HP-PC" duration="00:00:25.5763622" startTime="2017-06-20T23:22:48.7035275+10:00" endTime="2017-06-20T23:23:14.2835275+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0d59ecb-b3ed-406f-acd3-713c03f8e5eb">
+      <Output>
+        <StdOut>Unable to connect to the remote server</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cd88e1ba-1b2a-423c-aee9-538029a29e39" testId="81e5eb03-a484-249a-c5d2-a05630d9be90" testName="IndexPostTestAllNumbers" computerName="HP-PC" duration="00:00:00.0010564" startTime="2017-06-20T23:23:14.2855275+10:00" endTime="2017-06-20T23:23:14.2935275+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd88e1ba-1b2a-423c-aee9-538029a29e39">
+    </UnitTestResult>
+    <UnitTestResult executionId="1f7c55b5-59fb-4299-9080-0aa3f04ab422" testId="98b6814a-a7fa-a632-6108-19e37508eed8" testName="IndexPostTestOddNumbers" computerName="HP-PC" duration="00:00:00.0010560" startTime="2017-06-20T23:23:14.2965275+10:00" endTime="2017-06-20T23:23:14.3045275+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f7c55b5-59fb-4299-9080-0aa3f04ab422">
+    </UnitTestResult>
+    <UnitTestResult executionId="5e28fe04-3993-4d83-bcf3-23ae8a3b7c64" testId="dafd4075-e542-20e1-3b63-5e0b2a8ecf9e" testName="IndexPostTestNegativeNumnber" computerName="HP-PC" duration="00:00:00.0018904" startTime="2017-06-20T23:23:14.3075275+10:00" endTime="2017-06-20T23:23:14.3155275+10:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e28fe04-3993-4d83-bcf3-23ae8a3b7c64">
+    </UnitTestResult>
+  </Results>
+</TestRun>

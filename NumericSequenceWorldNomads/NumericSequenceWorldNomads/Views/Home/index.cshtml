@@ -1,0 +1,53 @@
+﻿@model NumericSequenceWorldNomads.Models.NumberModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div >
+    <h1>Numeric Sequence Calculator</h1>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { id = "formHome" }))
+    {   @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <p>Enter number: @Html.EditorFor(m => m.Number)</p>
+        <div id="error">@Html.ValidationMessageFor(m => m.Number)</div>
+        <p ><input id="btnSubmit" type="submit" value="Calculate" /></p>
+    }
+   
+</div>
+<div id="output"></div>
+@section scripts
+{
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $("#formHome").on("submit", function (e) {
+                e.preventDefault();
+                
+                if ($("#Number").val() <= 0) {
+                    alert('Value of number can not be less than or equal to zero');
+                    return false;
+                }
+                $.ajax({
+                    url: this.action,
+                    type: this.method,
+                    data: $(this).serialize(),
+                    success: function (data) {
+                        if (data.indexOf("field-validation-error") > 0) {
+                            $("#error").html(data);
+                            $("#output").html("");
+                        } else {
+                            $("#output").html(data);
+                            $("#error").html("");
+                        }
+                    },
+                    error: function (data) {
+                        $("#error").html(data);
+                        $("#output").html("");
+                    }
+                })
+            })
+        });
+    </script>
+}

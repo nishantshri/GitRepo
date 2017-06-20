@@ -1,0 +1,45 @@
+﻿@model NumericSequenceWorldNomads.Models.NumberModel
+
+<div>
+<h4>Sequence Calculated</h4>
+            <p>S3.1 The following numeric sequences are displayed</p>
+            
+            <ul >
+                <li >
+                    <h4 >All Numbers Sequence</h4>
+                    <p>S3.1.1 All numbers up to and including the number entered</p>
+                     Output : <span class="output" id="allnumbers">@Html.DisplayFor(m => m.AllNumbers)</span>
+                </li>
+
+                <li >
+                    <h4 class="list-group-item-heading">Odd Numbers Sequence</h4>
+                    <p>S3.1.2 All odd numbers up to and including the number entered</p>
+                    Output : <span class="output" id="oddnumbers">@Html.DisplayFor(m => m.OddNumbers)</span>
+                </li>
+
+                <li >
+                    <h4 class="list-group-item-heading">Even Numbers Sequence</h4>
+                    <p>S3.1.3 All even numbers up to and including the number entered</p>
+                    Output : <span class="output" id="evennumbers">@Html.DisplayFor(m => m.EvenNumbers)</span>
+                </li>
+
+                <li >
+                    <h4 >Conditional Numbers Sequence</h4>
+                    <p>
+                        S3.1.4 All numbers up to and including the number entered, except when
+                        <ul>
+                            <li>S3.1.4.1 A number is a multiple of 3 output C</li>
+                            <li>S3.1.4.2 A number is a multiple of 5 output E</li>
+                            <li>S3.1.4.3 A number is a multiple of both 3 and 5 output Z</li>
+                        </ul>
+                    </p>
+                   Output : <span class="output" id="substitutednumbers">@Html.DisplayFor(m => m.SubstitutedNumbers)</span>
+                </li>
+
+                <li >
+                    <h4 >Fibonacci Numbers Sequence</h4>
+                    <p>S3.1.5 All fibonacci number up to and including the number entered</p>
+                   Output : <span class="output" id="fibonaccinumbers">@Html.DisplayFor(m => m.FibonacciNumbers)</span>
+                </li>
+            </ul>
+</div>
