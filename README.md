@@ -15,13 +15,13 @@ in this line of code Instance.Run("NumericSequenceWorldNomads", 5886); change va
 Please perform the below steps:
   6.1 Go to install path of Visual Studio (For eg: C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE) and open devenv.exe.xml
     in any text editor. Text editor should be opened as Administrator.
-  6.2 Just below <runtime> tag add <loadFromRemoteSources enabled="true" />
+  6.2 Just below runtime tag add loadFromRemoteSources enabled="true".
   
 7. Application is developed in Visual Studio 2010 and framework is .NET 4.0
 
 8. MVC framwork has been used to developed the web application.
 
-9. In case of any issues while running the please contact me.
+9. In case of any issues while running the application please contact me.
 
 
 
